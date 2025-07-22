@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories...</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            padding-inline: 1em;
+            font-size: 1.2rem;
+        }
+        pre{
+            text-wrap: wrap;
+            font-weight: inherit;
+            font-size: inherit;
+            position: relative;
+        }
+       pre::after{
+            content: " ";
+            height: 20px;
+            width: 20px;
+            margin-left: 2px;
+            background: red;
+            position: absolute;
+            animation: blink 1s infinite linear;
+        }
+        @keyframes blink {
+            0%{
+                transform: scale(0.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Google</h1>
+        <div class="k">
+            <pre></pre>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
